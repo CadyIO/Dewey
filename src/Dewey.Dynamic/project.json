@@ -1,0 +1,102 @@
+{
+    "title": "Dewey Dynamic",
+    "copyright": "Copyright @ Refreshing Collective, LLC",
+    "version": "6.0.0",
+    "description": "A collection of .Net utilities for dynamic types",
+    "authors": [
+        "Refreshing Collective <contact@refreshing.io>"
+    ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable",
+        "define": [ "DEBUG", "TRACE" ],
+        "xmlDoc": true,
+        "optimize": true
+    },
+    "packOptions": {
+        "tags": [
+            "Utilities",
+            "Extensions",
+            "Dynamic"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/RefreshingIO/dewey/master/assets/dewey-32x32.png",
+        "projectUrl": "https://github.com/RefreshingIO/dewey",
+        "licenseUrl": "https://raw.githubusercontent.com/RefreshingIO/refreshing-ui/master/LICENSE",
+        "owners": [
+            "Refreshing Collective <contact@refreshing.io>"
+        ],
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/RefreshingIO/dewey"
+        },
+        "summary": "A collection of .Net utilities for dynamic types"
+    },
+    "frameworks": {
+        "net45": {},
+        "net451": {},
+        "net452": {},
+        "net46": {},
+        "net461": {},
+        "dnx451": {},
+        "dnx46": {},
+        "netcoreapp1.0": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "Microsoft.NETCore.App": "1.0.1",
+                "NETStandard.Library": "1.6.0",
+                "System.Dynamic.Runtime": "4.0.11"
+            }
+        },
+        "netstandard1.3": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0",
+                "System.Dynamic.Runtime": "4.0.11"
+            }
+        },
+        "netstandard1.4": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0",
+                "System.Dynamic.Runtime": "4.0.11"
+            }
+        },
+        "netstandard1.5": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0",
+                "System.Dynamic.Runtime": "4.0.11"
+            }
+        },
+        "netstandard1.6": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0",
+                "System.Dynamic.Runtime": "4.0.11"
+            }
+        }
+    },
+    "dependencies": {
+        "Newtonsoft.Json": "9.0.1"
+    }
+}

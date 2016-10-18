@@ -1,0 +1,98 @@
+﻿{
+    "title": "Dewey Redis Caching",
+    "copyright": "Copyright @ Refreshing Collective, LLC",
+    "version": "6.0.0",
+    "description": "A collection of .Net utilities for caching in Redis",
+    "authors": [
+        "Refreshing Collective <contact@refreshing.io>"
+    ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable"
+    },
+    "packOptions": {
+        "tags": [
+            "Utilities",
+            "Extensions",
+            "Caching",
+            "Redis"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/RefreshingIO/dewey/master/assets/dewey-32x32.png",
+        "projectUrl": "https://github.com/RefreshingIO/dewey",
+        "licenseUrl": "https://raw.githubusercontent.com/RefreshingIO/refreshing-ui/master/LICENSE",
+        "owners": [
+            "Refreshing Collective <contact@refreshing.io>"
+        ],
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/RefreshingIO/dewey"
+        },
+        "summary": "A collection of .Net utilities for caching in Redis"
+    },
+    "frameworks": {
+        "net451": {},
+        "net452": {},
+        "net46": {},
+        "net461": {},
+        "dnx451": {},
+        "dnx46": {},
+        "netcoreapp1.0": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "Microsoft.NETCore.App": "1.0.1",
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.3": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.4": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.5": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.6": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
+            }
+        }
+    },
+    "dependencies": {
+        "Dewey.Caching": "6.0.0",
+        "Microsoft.Extensions.Caching.Abstractions": "1.0.0",
+        "Microsoft.Extensions.Options": "1.0.0",
+        "Newtonsoft.Json": "9.0.2-beta1",
+        "StackExchange.Redis": "1.1.608"
+    }
+}

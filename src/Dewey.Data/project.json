@@ -1,0 +1,75 @@
+﻿{
+    "title": "Dewey Data",
+    "copyright": "Copyright @ Refreshing Collective, LLC",
+    "version": "6.0.0",
+    "description": "A collection of .Net utilities for System.Data",
+    "authors": [
+        "Refreshing Collective <contact@refreshing.io>"
+    ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable",
+        "define": [ "DEBUG", "TRACE" ],
+        "xmlDoc": true,
+        "optimize": true
+    },
+    "packOptions": {
+        "tags": [
+            "Utilities",
+            "Extensions",
+            "System.Data",
+            "Data"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/RefreshingIO/dewey/master/assets/dewey-32x32.png",
+        "projectUrl": "https://github.com/RefreshingIO/dewey",
+        "licenseUrl": "https://raw.githubusercontent.com/RefreshingIO/refreshing-ui/master/LICENSE",
+        "owners": [
+            "Refreshing Collective <contact@refreshing.io>"
+        ],
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/RefreshingIO/dewey"
+        },
+        "summary": "A collection of .Net utilities for System.Data"
+    },
+    "dependencies": {
+        "Dewey": "6.0.0"
+    },
+    "frameworks": {
+        "net45": {
+            "frameworkAssemblies": {
+                "System.Data": ""
+            }
+        },
+        "net451": {
+            "frameworkAssemblies": {
+                "System.Data": ""
+            }
+        },
+        "net452": {
+            "frameworkAssemblies": {
+                "System.Data": ""
+            }
+        },
+        "net46": {
+            "frameworkAssemblies": {
+                "System.Data": ""
+            }
+        },
+        "net461": {
+            "frameworkAssemblies": {
+                "System.Data": ""
+            }
+        },
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Data": ""
+            }
+        },
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Data": ""
+            }
+        }
+    }
+}

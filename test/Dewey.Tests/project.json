@@ -1,0 +1,40 @@
+﻿{
+    "title": "Dewey Tests",
+    "copyright": "Copyright @ Refreshing Collective, LLC",
+    "version": "6.0.0",
+    "description": "Tests for Dewey .Net utilities",
+    "packOptions": {
+        "tags": [
+            "Utilities",
+            "Extensions",
+            "Tests"
+        ],
+        "projectUrl": "https://github.com/RefreshingIO/dewey",
+        "licenseUrl": "https://raw.githubusercontent.com/RefreshingIO/refreshing-ui/master/LICENSE",
+        "owners": [
+            "Refreshing Collective <contact@refreshing.io>"
+        ],
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/RefreshingIO/dewey"
+        },
+        "summary": "SDK for FoxPoint API"
+    },
+    "authors": [
+        "Refreshing Collective <contact@refreshing.io>"
+    ],
+    "dependencies": {
+        "Dewey": "6.0.0",
+        "dotnet-test-xunit": "2.2.0-preview2-build1029",
+        "Microsoft.NETCore.App": "1.0.1",
+        "Newtonsoft.Json": "9.0.2-beta1",
+        "xunit": "2.2.0-beta3-build3402"
+    },
+    "frameworks": {
+        "netcoreapp1.0": { }
+    },
+    "runtimeOptions": {
+        "gcServer": true
+    },
+    "testRunner": "xunit"
+}
