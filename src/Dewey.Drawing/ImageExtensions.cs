@@ -6,8 +6,16 @@ using System.IO;
 
 namespace Dewey.Drawing
 {
+    /// <summary>
+    /// Extension methods for Image type
+    /// </summary>
     public static class ImageExtensions
     {
+        /// <summary>
+        /// Get the bytes for a image
+        /// </summary>
+        /// <param name="value">The image</param>
+        /// <returns>The image bytes</returns>
         public static byte[] GetBytes(this Image value)
         {
             if (value == null) {
@@ -17,6 +25,13 @@ namespace Dewey.Drawing
             return (byte[])(new ImageConverter()).ConvertTo(value, typeof(byte[]));
         }
 
+        /// <summary>
+        /// Resize an image from byte array
+        /// </summary>
+        /// <param name="value">The image byte array to resize</param>
+        /// <param name="maxWidth">The max width to resize an image to</param>
+        /// <param name="maxHeight">The max height to resize an image to</param>
+        /// <returns>The resized Image</returns>
         public static Image Resize(this byte[] value, int maxWidth, int maxHeight)
         {
             if (value == null) {
@@ -28,6 +43,11 @@ namespace Dewey.Drawing
             return Resize(image, maxWidth, maxHeight);
         }
 
+        /// <summary>
+        /// Get an image from a byte array
+        /// </summary>
+        /// <param name="value">The byte array of the image</param>
+        /// <returns>The image</returns>
         public static Image GetImage(this byte[] value)
         {
             if (value == null) {
@@ -39,6 +59,13 @@ namespace Dewey.Drawing
             }
         }
 
+        /// <summary>
+        /// Resize an image
+        /// </summary>
+        /// <param name="value">The image to resize</param>
+        /// <param name="maxWidth">The max width to resize an image to</param>
+        /// <param name="maxHeight">The max height to resize an image to</param>
+        /// <returns>The resized Image</returns>
         public static Image Resize(this Image value, int maxWidth, int maxHeight)
         {
             if (value == null) {
@@ -92,30 +119,6 @@ namespace Dewey.Drawing
             }
 
             return 1.0;
-        }
-
-        public static Bitmap EmptyBitmap {
-            get {
-                var result = new Bitmap(1, 1);
-
-                var gfx = Graphics.FromImage(result);
-
-                gfx.FillRectangle(Brushes.Transparent, 0, 0, 1, 1);
-
-                return result;
-            }
-        }
-
-        public static byte[] EmptyBitmapBytes {
-            get {
-                var result = new Bitmap(1, 1);
-
-                var gfx = Graphics.FromImage(result);
-
-                gfx.FillRectangle(Brushes.Transparent, 0, 0, 1, 1);
-
-                return (byte[])(new ImageConverter()).ConvertTo(result, typeof(byte[]));
-            }
         }
     }
 }

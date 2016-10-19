@@ -5,8 +5,16 @@ using Dewey.Types;
 
 namespace Dewey.Data
 {
+    /// <summary>
+    /// Extension methods for DataTable type
+    /// </summary>
     public static class DataTableExtensions
     {
+        /// <summary>
+        /// Export a DataTable rows and columns to a CSV
+        /// </summary>
+        /// <param name="dataTable">The DataTable from which to export</param>
+        /// <param name="fileName">The filename to export the CSV to</param>
         public static void ExportCsv(this DataTable dataTable, string fileName)
         {
             var streamWriter = new StreamWriter(fileName, false);
