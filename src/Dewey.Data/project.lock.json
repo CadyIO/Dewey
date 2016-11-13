@@ -96,7 +96,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 6.0.0"
+      "Dewey"
     ],
     ".NETFramework,Version=v4.5": [
       "System.Data"

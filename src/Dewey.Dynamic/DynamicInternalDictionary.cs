@@ -119,6 +119,10 @@ namespace Dewey.Dynamic
         /// <returns>The dictionary key/value pair enumerator</returns>
         public IEnumerator<KeyValuePair<string, object>> GetEnumerator() => ((IDictionary<string, object>)_dictionary).GetEnumerator();
 
+        /// <summary>
+        /// Get the enumerator from the dictionary
+        /// </summary>
+        /// <returns>The dictionary enumerator</returns>
         IEnumerator IEnumerable.GetEnumerator() => _dictionary.GetEnumerator();
     }
 }

@@ -12,12 +12,29 @@ namespace Dewey.WinForms
     /// <typeparam name="T">The type of the list</typeparam>
     public class SortableBindingList<T> : BindingList<T>
     {
+        /// <summary>
+        /// The binding list internal dictionary
+        /// </summary>
         private static readonly Dictionary<string, Func<List<T>, IEnumerable<T>>> _cachedOrderByExpressions = new Dictionary<string, Func<List<T>, IEnumerable<T>>>();
+
+        /// <summary>
+        /// A copy of the original list
+        /// </summary>
         private List<T> _originalList;
 
+        /// <summary>
+        /// The populate binding list action
+        /// </summary>
         private readonly Action<SortableBindingList<T>, List<T>> _populateBaseList = (a, b) => a.ResetItems(b);
 
+        /// <summary>
+        /// The sort direction
+        /// </summary>
         private ListSortDirection _sortDirection;
+
+        /// <summary>
+        /// The property descriptor
+        /// </summary>
         private PropertyDescriptor _sortProperty;
 
         /// <summary>
@@ -120,6 +137,10 @@ namespace Dewey.WinForms
             ResetItems(_originalList);
         }
 
+        /// <summary>
+        /// Reset the list items with the provided list
+        /// </summary>
+        /// <param name="items">The list to use to reset the items</param>
         private void ResetItems(List<T> items)
         {
             ClearItems();

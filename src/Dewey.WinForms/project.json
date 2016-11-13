@@ -32,8 +32,8 @@
         "summary": "A collection of .Net utilities for Windows Forms"
     },
     "dependencies": {
-        "Dewey": "6.0.0",
-        "Dewey.Data": "6.0.0"
+        "Dewey": "*",
+        "Dewey.Data": "*"
     },
     "frameworks": {
         "net45": {

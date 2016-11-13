@@ -9,6 +9,11 @@ namespace Dewey.Types
     /// </summary>
     public static class StreamExtensions
     {
+        /// <summary>
+        /// Get the byte array value of a Stream
+        /// </summary>
+        /// <param name="stream">The Stream</param>
+        /// <returns>The byte array value</returns>
         public static byte[] GetBytes(this Stream stream)
         {
             using (var memoryStream = new MemoryStream()) {
@@ -18,10 +23,26 @@ namespace Dewey.Types
             }
         }
 
-        public static Stream ToStream(this byte[] buffer) => new MemoryStream(buffer);
+        /// <summary>
+        /// Convert a byte array to a MemoryStream
+        /// </summary>
+        /// <param name="buffer">The byte array</param>
+        /// <returns>The Stream</returns>
+        public static Stream ToMemoryStream(this byte[] buffer) => new MemoryStream(buffer);
 
+        /// <summary>
+        /// Read a string from a UTF-8 encoded Stream
+        /// </summary>
+        /// <param name="stream">The Stream to read</param>
+        /// <returns>The string value</returns>
         public static string ReadString(this Stream stream) => ReadString(stream, Encoding.UTF8);
 
+        /// <summary>
+        /// Read a string from a Stream
+        /// </summary>
+        /// <param name="stream">The Stream to read</param>
+        /// <param name="encoding">The encoding of the Stream</param>
+        /// <returns>The string value</returns>
         public static string ReadString(this Stream stream, Encoding encoding)
         {
             string result;
@@ -33,8 +54,20 @@ namespace Dewey.Types
             return result;
         }
 
+        /// <summary>
+        /// Asynchcroneously read a string from a UTF-8 encoded Stream
+        /// </summary>
+        /// <param name="stream">The Stream to read</param>
+        /// <returns>The string value task</returns>
         public static async Task<string> ReadStringAsync(this Stream stream) => await ReadStringAsync(stream, Encoding.UTF8);
 
+
+        /// <summary>
+        /// Asynchcroneously read a string from a Stream
+        /// </summary>
+        /// <param name="stream">The Stream to read</param>
+        /// <param name="encoding">The encoding of the Stream</param>
+        /// <returns>The string value task</returns>
         public static Task<string> ReadStringAsync(this Stream stream, Encoding encoding)
         {
             string result;

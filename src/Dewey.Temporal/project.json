@@ -1,8 +1,8 @@
-{
-    "title": "Dewey Azure",
+﻿{
+    "title": "Dewey Temporal",
     "copyright": "Copyright @ Refreshing Collective, LLC",
     "version": "6.0.0",
-    "description": "A collection of .Net utilities for Azure",
+    "description": "A collection of .Net utilities for Dates and Times",
     "authors": [
         "Refreshing Collective <contact@refreshing.io>"
     ],
@@ -16,8 +16,7 @@
     "packOptions": {
         "tags": [
             "Utilities",
-            "Extensions",
-            "Azure"
+            "Extensions"
         ],
         "iconUrl": "https://raw.githubusercontent.com/RefreshingIO/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/RefreshingIO/dewey",
@@ -29,11 +28,10 @@
             "type": "git",
             "url": "git://github.com/RefreshingIO/dewey"
         },
-        "description": "A collection of .Net utilities for Azure"
+        "summary": "A collection of .Net utilities for Dates and Times"
     },
     "dependencies": {
-        "Dewey": "*",
-        "WindowsAzure.Storage": "7.2.1"
+        "Dewey": "*"
     },
     "frameworks": {
         "net45": {},

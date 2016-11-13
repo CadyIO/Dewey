@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{07E907E5-2
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dewey.Caching", "src\Dewey.Caching\Dewey.Caching.xproj", "{7136F8D9-8A8A-4DC3-957B-41EF46907BD5}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dewey.Temporal", "src\Dewey.Temporal\Dewey.Temporal.xproj", "{C03C559E-DCC7-47F4-9786-1C29727FED0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{7136F8D9-8A8A-4DC3-957B-41EF46907BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7136F8D9-8A8A-4DC3-957B-41EF46907BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7136F8D9-8A8A-4DC3-957B-41EF46907BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03C559E-DCC7-47F4-9786-1C29727FED0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03C559E-DCC7-47F4-9786-1C29727FED0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03C559E-DCC7-47F4-9786-1C29727FED0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03C559E-DCC7-47F4-9786-1C29727FED0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,5 +95,6 @@ Global
 		{1BF9E7CE-F538-489F-82A0-77FAF32EAE27} = {5559CC95-BC69-4CC9-B417-ADB21FC95E5E}
 		{DB7216AC-1CB3-4D26-AD3D-2FE01FB301DB} = {5559CC95-BC69-4CC9-B417-ADB21FC95E5E}
 		{7136F8D9-8A8A-4DC3-957B-41EF46907BD5} = {5559CC95-BC69-4CC9-B417-ADB21FC95E5E}
+		{C03C559E-DCC7-47F4-9786-1C29727FED0B} = {5559CC95-BC69-4CC9-B417-ADB21FC95E5E}
 	EndGlobalSection
 EndGlobal

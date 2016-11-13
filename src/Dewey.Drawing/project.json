@@ -33,7 +33,7 @@
         "summary": "A collection of .Net utilities for System.Drawing"
     },
     "dependencies": {
-        "Dewey": "6.0.0"
+        "Dewey": "*"
     },
     "frameworks": {
         "net45": {
