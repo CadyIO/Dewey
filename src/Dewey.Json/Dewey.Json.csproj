@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <Version>6.5.0</Version>
+    <AssemblyVersion>6.5.0.0</AssemblyVersion>
+    <FileVersion>6.5.0.0</FileVersion>
+    <Description>A collection of .Net utilities for JSON</Description>
+    <Authors>Refreshing Collective &lt;contact@refreshing.io&gt;</Authors>
+    <Company>Refreshing Collective LLC</Company>
+    <Copyright>Copyright @ Refreshing Collective LLC</Copyright>
+    <PackageLicenseUrl>https://github.com/RefreshingIO/Dewey/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/RefreshingIO/Dewey</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RefreshingIO/Dewey</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/RefreshingIO/Dewey/master/assets/icon.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Utilities;Extensions;JSON</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile>bin\Debug\netstandard1.4\Dewey.Json.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  </ItemGroup>
+
+</Project>
