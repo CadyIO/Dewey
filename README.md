@@ -1,6 +1,13 @@
 # Dewey
 
-[![Build Status](https://travis-ci.org/RefreshingIO/Dewey.svg?branch=master)](https://travis-ci.org/RefreshingIO/Dewey)
+## Build Status
+
+`Platform` | `Master`
+--- | ---
+**Windows** | [![AppVeyor CI status](https://ci.appveyor.com/api/projects/status/5juo1c8p20fnbuwx?svg=true)](https://ci.appveyor.com/project/AustinWinstanley/dewey)
+**Linux / OS X** | [![Travis CI Build Status](https://travis-ci.org/RefreshingIO/Dewey.svg?branch=master)](https://travis-ci.org/RefreshingIO/Dewey)
+
+## Overview
 
 A collection of .Net utilities
 
