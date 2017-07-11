@@ -6,13 +6,13 @@
     <AssemblyVersion>6.5.0.0</AssemblyVersion>
     <FileVersion>6.5.0.0</FileVersion>
     <Description>A collection of .Net utilities</Description>
-    <Authors>Refreshing Collective &lt;contact@refreshing.io&gt;</Authors>
-    <Company>Refreshing Collective LLC</Company>
-    <Copyright>Copyright @ Refreshing Collective LLC</Copyright>
-    <PackageLicenseUrl>https://github.com/RefreshingIO/Dewey/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/RefreshingIO/Dewey</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/RefreshingIO/Dewey</RepositoryUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/RefreshingIO/Dewey/master/assets/icon.png</PackageIconUrl>
+    <Authors>Cady IO &lt;contact@cady.io&gt;</Authors>
+    <Company>Cady IO</Company>
+    <Copyright>Copyright @ Cady IO</Copyright>
+    <PackageLicenseUrl>https://github.com/CadyIO/Dewey/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/CadyIO/Dewey</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CadyIO/Dewey</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/CadyIO/Dewey/master/assets/icon.png</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Utilities;Extensions</PackageTags>
   </PropertyGroup>
