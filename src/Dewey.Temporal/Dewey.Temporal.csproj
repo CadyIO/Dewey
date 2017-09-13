@@ -1,28 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
-      <Version>6.5.0</Version>
-      <AssemblyVersion>6.5.0.0</AssemblyVersion>
-      <FileVersion>6.5.0.0</FileVersion>
-      <Description>A collection of .Net utilities for Dates and Times</Description>
-      <Authors>Cady IO &lt;contact@cady.io&gt;</Authors>
-      <Company>Cady IO</Company>
-      <Copyright>Copyright @ Cady IO</Copyright>
-      <PackageLicenseUrl>https://github.com/CadyIO/Dewey/blob/master/LICENSE</PackageLicenseUrl>
-      <PackageProjectUrl>https://github.com/CadyIO/Dewey</PackageProjectUrl>
-      <RepositoryUrl>https://github.com/CadyIO/Dewey</RepositoryUrl>
-      <PackageIconUrl>https://raw.githubusercontent.com/CadyIO/Dewey/master/assets/icon.png</PackageIconUrl>
-      <RepositoryType>git</RepositoryType>
-      <PackageTags>Utilities;Extensions;Temporal;Date;Time;DateTime</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>6.7.0</Version>
+    <AssemblyVersion>6.7.0.0</AssemblyVersion>
+    <FileVersion>6.7.0.0</FileVersion>
+    <Description>A collection of .Net utilities for Dates and Times</Description>
+    <Authors>Cady IO &lt;contact@cady.io&gt;</Authors>
+    <Company>Cady IO</Company>
+    <Copyright>Copyright @ Cady IO</Copyright>
+    <PackageLicenseUrl>https://github.com/CadyIO/Dewey/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/CadyIO/Dewey</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CadyIO/Dewey</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/CadyIO/Dewey/master/assets/icon.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Utilities;Extensions;Temporal;Date;Time;DateTime</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-      <DocumentationFile>bin\Debug\netstandard1.4\Dewey.Temporal.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard1.4\Dewey.Temporal.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dewey" Version="6.5.0" />
+    <PackageReference Include="Dewey" Version="6.7.0" />
   </ItemGroup>
 
 </Project>

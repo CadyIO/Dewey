@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
-    <Version>6.5.0</Version>
-    <AssemblyVersion>6.5.0.0</AssemblyVersion>
-    <FileVersion>6.5.0.0</FileVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>6.7.0</Version>
+    <AssemblyVersion>6.7.0.0</AssemblyVersion>
+    <FileVersion>6.7.0.0</FileVersion>
     <Description>A collection of .Net utilities for dynamic types</Description>
     <Authors>Cady IO &lt;contact@cady.io&gt;</Authors>
     <Company>Cady IO</Company>
@@ -18,11 +18,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-      <DocumentationFile>bin\Debug\netstandard1.4\Dewey.Dynamic.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard1.4\Dewey.Dynamic.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="System.Dynamic.Runtime" Version="4.3.0" />
   </ItemGroup>
 
