@@ -4,7 +4,7 @@
 
 `Platform` | `Master`
 --- | ---
-**Windows** | [![AppVeyor CI status](https://ci.appveyor.com/api/projects/status/5juo1c8p20fnbuwx?svg=true)](https://ci.appveyor.com/project/AustinWinstanley/dewey)
+**Windows** | [![Build status](https://ci.appveyor.com/api/projects/status/fsu7t67aktwc9xtm?svg=true)](https://ci.appveyor.com/project/CadyIO/dewey)
 **Linux / OS X** | [![Travis CI Build Status](https://travis-ci.org/CadyIO/Dewey.svg?branch=master)](https://travis-ci.org/CadyIO/Dewey)
 
 ## Overview
