@@ -8,16 +8,16 @@ using System.Text.RegularExpressions;
 namespace Dewey.Types
 {
     /// <summary>
-    /// Extension methods for String type
+    /// Extension methods for String type.
     /// </summary>
     public static class StringExtensions
     {
         /// <summary>
-        /// Remove a length from the end of a string
+        /// Remove a length from the end of a string.
         /// </summary>
-        /// <param name="value">The string value</param>
-        /// <param name="len">The length to remove</param>
-        /// <returns>The resulting string after length removed</returns>
+        /// <param name="value">The string value.</param>
+        /// <param name="len">The length to remove.</param>
+        /// <returns>The resulting string after length removed.</returns>
         public static string Chomp(this string value, int len)
         {
             if (value == null) {
@@ -32,17 +32,17 @@ namespace Dewey.Types
         }
 
         /// <summary>
-        /// Convert a string to a nullable Guid
+        /// Convert a string to a nullable Guid.
         /// </summary>
-        /// <param name="guid">The Guid string to convert</param>
-        /// <returns>A nullable Guid</returns>
+        /// <param name="guid">The Guid string to convert.</param>
+        /// <returns>A nullable Guid.</returns>
         public static Guid? ToNullableGuid(this string guid) => (guid.IsEmpty()) ? null : (Guid?)(new Guid(guid));
 
         /// <summary>
-        /// Convert a string to a Guid
+        /// Convert a string to a Guid.
         /// </summary>
-        /// <param name="guid">The Guid string to convert</param>
-        /// <returns>A Guid</returns>
+        /// <param name="guid">The Guid string to convert.</param>
+        /// <returns>The Guid..</returns>
         public static Guid ToGuid(this string guid)
         {
             if (guid.IsEmpty()) {
@@ -53,13 +53,18 @@ namespace Dewey.Types
         }
 
         /// <summary>
-        /// Get the digits in a string
+        /// Get the digits in a string.
         /// </summary>
-        /// <remarks>Helpful for stripping a phone number or social security number of extra characters</remarks>
-        /// <param name="value">The string value from which to get the difits</param>
-        /// <returns>A string of the digits</returns>
+        /// <remarks>Helpful for stripping a phone number or social security number of extra characters.</remarks>
+        /// <param name="value">The string value from which to get the difits.</param>
+        /// <returns>A string of the digits.</returns>
         public static string Digits(this string value) => new string(value?.Where(c => c >= '0' && c <= '9').ToArray());
 
+        /// <summary>
+        /// Determine whether a string is empty.
+        /// </summary>
+        /// <param name="value">The string value to check.</param>
+        /// <returns>True if empty. False otherwise.</returns>
         public static bool IsEmpty(this string value) => string.IsNullOrWhiteSpace(value);
 
         public static bool IsNotEmpty(this string value) => !value.IsEmpty();
@@ -97,7 +102,6 @@ namespace Dewey.Types
 
         public static string ToPascal(this string value)
         {
-            // Probably a constant value
             if (value.Contains("_") || value.IsAllUpper()) {
                 value = value.ToLower();
                 string[] parts = value.Split('_');

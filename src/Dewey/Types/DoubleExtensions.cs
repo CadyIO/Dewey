@@ -3,7 +3,7 @@
 namespace Dewey.Types
 {
     /// <summary>
-    /// Extension methods for Double type
+    /// Extension methods for Double type.
     /// </summary>
     public static class DoubleExtensions
     {

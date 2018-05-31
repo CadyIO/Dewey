@@ -3,7 +3,7 @@
 namespace Dewey.Types
 {
     /// <summary>
-    /// Extension methods for Integer type
+    /// Extension methods for Integer type.
     /// </summary>
     public static class IntExtensions
     {

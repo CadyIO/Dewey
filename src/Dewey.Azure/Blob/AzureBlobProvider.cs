@@ -8,24 +8,24 @@ using System.Threading.Tasks;
 namespace Dewey.Azure.Blob
 {
     /// <summary>
-    /// A blob provider for Azure Cloud
+    /// A blob provider for Azure Cloud.
     /// </summary>
     public class AzureBlobProvider : IBlobProvider
     {
         /// <summary>
-        /// The connection string for the Azure Cloud
+        /// The connection string for the Azure Cloud.
         /// </summary>
         public static string ConnectionString { get; private set; }
 
         /// <summary>
-        /// Constructor
+        /// Constructor.
         /// </summary>
         public AzureBlobProvider()
         {
         }
 
         /// <summary>
-        /// Constructor providing the connection string
+        /// Constructor providing the connection string.
         /// </summary>
         public AzureBlobProvider(string connectionString)
         {
@@ -33,11 +33,11 @@ namespace Dewey.Azure.Blob
         }
 
         /// <summary>
-        /// Download a blob async
+        /// Download a blob async.
         /// </summary>
-        /// <param name="container">The name of the container from which to download the blob</param>
-        /// <param name="name">The name of the blob to download</param>
-        /// <returns>The byte array of the resulting blob</returns>
+        /// <param name="container">The name of the container from which to download the blob.</param>
+        /// <param name="name">The name of the blob to download.</param>
+        /// <returns>The byte array of the resulting blob.</returns>
         public async Task<byte[]> DownloadAsync(string container, string name)
         {
             byte[] result;
@@ -106,7 +106,7 @@ namespace Dewey.Azure.Blob
             // Create the container if it doesn't already exist.
             await newContainer.CreateIfNotExistsAsync();
 
-            //make it publicly accessible
+            // Make it publicly accessible.
             await newContainer.SetPermissionsAsync(new BlobContainerPermissions
             {
                 PublicAccess = BlobContainerPublicAccessType.Blob

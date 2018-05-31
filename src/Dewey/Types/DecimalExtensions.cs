@@ -3,33 +3,33 @@
 namespace Dewey.Types
 {
     /// <summary>
-    /// Extension methods for Decimal type
+    /// Extension methods for Decimal type.
     /// </summary>
     public static class DecimalExtensions
     {
         /// <summary>
-        /// Convert to a currency string
+        /// Convert to a currency string.
         /// </summary>
-        /// <param name="number">The number to convert</param>
-        /// <example>One Dollar and Ten Cents</example>
-        /// <returns>A currency string</returns>
+        /// <param name="number">The number to convert.</param>
+        /// <example>One Dollar and Ten Cents.</example>
+        /// <returns>A currency string.</returns>
         public static string NumberToCurrencyText(this decimal number)
         {
-            // Round the value just in case the decimal value is longer than two digits
+            // Round the value just in case the decimal value is longer than two digits.
             number = Math.Round(number, 2);
 
-            // Divide the number into the whole and fractional part strings
+            // Divide the number into the whole and fractional part strings.
             var arrNumber = number.ToString().Split('.');
 
-            // Get the whole number text
+            // Get the whole number text.
             var wholePart = long.Parse(arrNumber[0]);
             var strWholePart = wholePart.NumberToText();
 
-            // For amounts of zero dollars show 'No Dollars...' instead of 'Zero Dollars...'
+            // For amounts of zero dollars show 'No Dollars...' instead of 'Zero Dollars...'.
             var wordNumber = (wholePart == 0 ? "No" : strWholePart) + (wholePart == 1 ? " Dollar and " : " Dollars and ");
 
             // If the array has more than one element then there is a fractional part otherwise there isn't
-            // just add 'No Cents' to the end
+            // just add 'No Cents' to the end.
             if (arrNumber.Length > 1) {
                 // If the length of the fractional element is only 1, add a 0 so that the text returned isn't,
                 // 'One', 'Two', etc but 'Ten', 'Twenty', etc.

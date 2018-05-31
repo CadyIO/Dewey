@@ -3,7 +3,7 @@
 namespace Dewey.Types
 {
     /// <summary>
-    /// Extension methods for List type
+    /// Extension methods for List type.
     /// </summary>
     public static class ListExtensions
     {

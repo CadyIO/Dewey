@@ -4,7 +4,7 @@ using System.Text;
 namespace Dewey.Types
 {
     /// <summary>
-    /// Extension methods for Long type
+    /// Extension methods for Long type.
     /// </summary>
     public static class LongExtensions
     {
@@ -40,11 +40,11 @@ namespace Dewey.Types
         public static long Divide(this long value, int arg) => (value / arg.ToLong());
 
         /// <summary>
-        /// Convert a file size long value to a readable string
+        /// Convert a file size long value to a readable string.
         /// </summary>
-        /// <param name="value">The number to convert</param>
+        /// <param name="value">The number to convert.</param>
         /// <example>100 MB</example>
-        /// <returns>A readable string</returns>
+        /// <returns>A readable string.</returns>
         public static string FileSizeToString(this long value)
         {
             float amount = value;
@@ -65,11 +65,11 @@ namespace Dewey.Types
         }
 
         /// <summary>
-        /// Convert to number string
+        /// Convert to number string.
         /// </summary>
-        /// <param name="number">The number to convert</param>
+        /// <param name="number">The number to convert.</param>
         /// <example>Two Thousand</example>
-        /// <returns>A number string</returns>
+        /// <returns>A number string.</returns>
         public static string NumberToText(this long number)
         {
             StringBuilder wordNumber = new StringBuilder();
