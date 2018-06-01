@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9DB4D59A-9A3F-4AE1-9FBE-404AB55122EB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey", "src\Dewey\Dewey.csproj", "{66C5F5B8-1B02-4EAE-9ED4-F51D899418E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey", "src\Dewey\Dewey.csproj", "{66C5F5B8-1B02-4EAE-9ED4-F51D899418E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{C87D31C5-FF81-4A0B-B554-9706A2275188}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,15 +14,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{C87D31C5-FF81-4A
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey.Azure", "src\Dewey.Azure\Dewey.Azure.csproj", "{6A8ECA57-07CC-493D-99D0-71A89EE0D069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Azure", "src\Dewey.Azure\Dewey.Azure.csproj", "{6A8ECA57-07CC-493D-99D0-71A89EE0D069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey.Caching", "src\Dewey.Caching\Dewey.Caching.csproj", "{C2885820-AD76-46C7-B469-3206A3798B06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Caching", "src\Dewey.Caching\Dewey.Caching.csproj", "{C2885820-AD76-46C7-B469-3206A3798B06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey.Dynamic", "src\Dewey.Dynamic\Dewey.Dynamic.csproj", "{A054C2B6-4BDE-4087-B27C-2A37FC881334}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Dynamic", "src\Dewey.Dynamic\Dewey.Dynamic.csproj", "{A054C2B6-4BDE-4087-B27C-2A37FC881334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey.Json", "src\Dewey.Json\Dewey.Json.csproj", "{57712953-18A4-43C3-BCC0-8EFA4B6BB4E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Json", "src\Dewey.Json\Dewey.Json.csproj", "{57712953-18A4-43C3-BCC0-8EFA4B6BB4E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey.Temporal", "src\Dewey.Temporal\Dewey.Temporal.csproj", "{91BBA13E-0924-4D54-A934-9FAAE69FCA88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Temporal", "src\Dewey.Temporal\Dewey.Temporal.csproj", "{91BBA13E-0924-4D54-A934-9FAAE69FCA88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey.Test", "src\Dewey.Test\Dewey.Test.csproj", "{38381A77-15C2-405D-82E1-69B2565EAAAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,16 +56,15 @@ Global
 		{91BBA13E-0924-4D54-A934-9FAAE69FCA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91BBA13E-0924-4D54-A934-9FAAE69FCA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91BBA13E-0924-4D54-A934-9FAAE69FCA88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38381A77-15C2-405D-82E1-69B2565EAAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38381A77-15C2-405D-82E1-69B2565EAAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38381A77-15C2-405D-82E1-69B2565EAAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38381A77-15C2-405D-82E1-69B2565EAAAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{66C5F5B8-1B02-4EAE-9ED4-F51D899418E1} = {9DB4D59A-9A3F-4AE1-9FBE-404AB55122EB}
-		{6A8ECA57-07CC-493D-99D0-71A89EE0D069} = {9DB4D59A-9A3F-4AE1-9FBE-404AB55122EB}
-		{C2885820-AD76-46C7-B469-3206A3798B06} = {9DB4D59A-9A3F-4AE1-9FBE-404AB55122EB}
-		{A054C2B6-4BDE-4087-B27C-2A37FC881334} = {9DB4D59A-9A3F-4AE1-9FBE-404AB55122EB}
-		{57712953-18A4-43C3-BCC0-8EFA4B6BB4E4} = {9DB4D59A-9A3F-4AE1-9FBE-404AB55122EB}
-		{91BBA13E-0924-4D54-A934-9FAAE69FCA88} = {9DB4D59A-9A3F-4AE1-9FBE-404AB55122EB}
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BA6EC48-E674-4899-B9D8-EBF8240884D8}
 	EndGlobalSection
 EndGlobal

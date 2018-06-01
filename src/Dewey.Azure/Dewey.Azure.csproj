@@ -22,8 +22,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dewey" Version="6.7.0" />
-    <PackageReference Include="WindowsAzure.Storage" Version="8.4.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dewey\Dewey.csproj" />
   </ItemGroup>
 
 </Project>

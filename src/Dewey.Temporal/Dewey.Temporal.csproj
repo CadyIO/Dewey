@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dewey" Version="6.7.0" />
+    <ProjectReference Include="..\Dewey\Dewey.csproj" />
   </ItemGroup>
 
 </Project>
