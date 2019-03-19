@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{C87D31C5-FF81-4A
 		.gitignore = .gitignore
 		.travis.yml = .travis.yml
 		build.ps1 = build.ps1
+		Directory.Build.props = Directory.Build.props
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
@@ -24,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Json", "src\Dewey.Jso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Temporal", "src\Dewey.Temporal\Dewey.Temporal.csproj", "{91BBA13E-0924-4D54-A934-9FAAE69FCA88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dewey.Test", "src\Dewey.Test\Dewey.Test.csproj", "{38381A77-15C2-405D-82E1-69B2565EAAAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dewey.Test", "src\Dewey.Test\Dewey.Test.csproj", "{38381A77-15C2-405D-82E1-69B2565EAAAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
